@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title>Splatoon</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+ </head>
+  <body>
+
+
+   <header class="header">
+    <h1 class="grid-6"> <%= link_to image_tag("logo.png", class:"logo"), "/" %> </h1>
+   </header>
+   <div class = "top-bar">
+<ul  class="pull-down-list">
+            <li class="list1"><%= link_to 'トップ', root_path, class: 'link', method: :GET %></li>
+            <li class="list2"><%= link_to 'メンバー紹介', list2s_index_path, class: 'link', method: :GET %></li>
+            <li class="list3"><%= link_to 'ルール説明', rules_path, class: 'link', method: :GET %></li>
+            <li class="list4"><%= link_to 'フェスまとめ', festivals_path, class: 'link', method: :GET %></li>
+            <li class="list5"><%= link_to '掲示板', posts_path, class: 'link', method: :GET %></li>
+  </ul>
+</div>
+       <%= yield %>
+    <footer>
+      <p>
+        Copyright Splatoon 2022.
+      </p>
+    </footer>
+  </body>
+</html>
