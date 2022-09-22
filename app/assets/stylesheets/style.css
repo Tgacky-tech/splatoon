@@ -16,10 +16,11 @@ body {
 
 .main{
     display: flex;
+    background-color:#EEEEEE;
 }
 
 .left-content{
-    heigjt:80%;
+    height:100%;
     width: 30%;
     background-color:#EEEEEE;
     padding-top: 50px;
@@ -401,5 +402,11 @@ display: flex;
 
 .youtube{
     width:80%;
+    margin: 0 auto;
+}
+
+.band-photo{
+    width:80%;
+    height:80%;
     margin: 0 auto;
 }
