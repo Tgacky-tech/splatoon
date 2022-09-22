@@ -1,7 +1,10 @@
-<h1>トップページ</h1>
-<%= link_to '新規投稿', '/posts/new', method: :GET %>
+<div class="post-main">
+<div class="post-flame">
+<font size="10px">　情報交換ページ<br></font>
+<font size="3px">　　　他人への誹謗中傷、スプラトゥーン３のネタバレは控えるようにお願いします。<br>音楽と展覧の会の感想や、このwebページの感想など書き込んでくれたらうれしいです。<br>
+<%= link_to '　　新規投稿はこちら', '/posts/new', class: 'nav-link', method: :GET %>
   <% @posts.each do |post| %>
-   <div class="post">
+   <div class="post-box">
     <div class="post-date">
       投稿日時：<%= post.created_at %>
     </div>
@@ -10,3 +13,5 @@
     </div>
   </div>
 <% end %>
+</div>
+</div>
